@@ -1,1 +1,110 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showcase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            background-color: aliceblue;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            height:90%;
+            width: 90%;
+            align-items: center;
+            box-shadow: 0 10px 12px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            padding: 40px;
+        }
+        .card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height:350px;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        h2 {
+            margin-top: 10px;
+            font-weight: 600;
+            font-size: 20px;
+            color: #333;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        a:hover h2 {
+            color: #007bff;
+        }
+        .card{
+            height: fit-content;
+        }
+        @media (max-width: 768px) {
+            body {
+                height: auto;
+            }
+            .container {
+                grid-template-columns: 1fr;
+                /* height: fit-content; */
+            }
+            .card{
+                height: fit-content;
+            }
+        }
+            @media (max-width: 468px) {
+            body {
+                height: auto;
+            }
+            .container {
+                grid-template-columns: 1fr;
+            }
+            .card{
+                height: fit-content;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <a href="https://harishravi1502427.github.io/portfolio/">
+                <img src="portfolio.png" alt="Portfolio Website">
+                <h2>Portfolio</h2>
+            </a>
+        </div>
+        <div class="card">
+            <a href="https://harishravi1502427.github.io/GAC/">
+                <img src="gac.png" alt="College Website">
+                <h2>College Website</h2>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
